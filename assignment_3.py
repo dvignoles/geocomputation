@@ -52,8 +52,8 @@ def demo_geom_collection():
 
 
 def main():
-    buildings, polygons = process_geojson("pluto.geojson")
-    print(f"A building: {buildings[4010080042]}")
+    buildings, polygons = process_geojson("inputs/pluto.geojson")
+    print(f"A building: {buildings[4003140001]}")
     print(f"A polygon: {polygons[0]}")
 
     fig, ax = demo_geom_collection()
