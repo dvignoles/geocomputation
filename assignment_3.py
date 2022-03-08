@@ -6,6 +6,7 @@ Daniel Vignoles
 
 import json
 import matplotlib.pyplot as plt
+from pathlib import Path
 
 from geocomp.shapes import Point, Polygon, GeometryCollection
 
@@ -52,7 +53,7 @@ def demo_geom_collection():
 
 
 def main():
-    buildings, polygons = process_geojson("inputs/pluto.geojson")
+    buildings, polygons = process_geojson(Path(__file__).parent.joinpath("inputs/pluto.geojson"))
     print(f"A building: {buildings[4003140001]}")
     print(f"A polygon: {polygons[0]}")
 
