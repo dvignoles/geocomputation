@@ -69,5 +69,7 @@ def main():
     print('Astoria Pluto Building Area Long Island State Plane')
     print(lisp_area.describe())
 
+    plt.show()
+
 if __name__ == "__main__":
     main()
